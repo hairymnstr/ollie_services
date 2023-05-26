@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor process for INA219 power rail monitor chips
+
+[Service]
+User=ollie
+ExecStart=python3 /home/ollie/ollie_services/scripts/current_sense.py
+
+[Install]
+WantedBy=multi-user.target
+

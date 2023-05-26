@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitors battery voltage and shuts down if lower than 10V
+
+[Service]
+User=ollie
+ExecStart=python3 /home/ollie/ollie_services/scripts/battery_monitor.py
+
+[Install]
+WantedBy=multi-user.target
+
